@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F194F0D729ACC8F20047203C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F194F0D629ACC8F20047203C /* RootView.swift */; };
-		F194F0D929ACC8F20047203C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F194F0D829ACC8F20047203C /* ContentView.swift */; };
+		F194F0D729ACC8F20047203C /* RootCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F194F0D629ACC8F20047203C /* RootCoordinatorView.swift */; };
 		F194F0DB29ACC8F30047203C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F194F0DA29ACC8F30047203C /* Assets.xcassets */; };
 		F194F0E529ACC98E0047203C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F194F0E429ACC98E0047203C /* AppDelegate.swift */; };
+		F194F10229ACD5400047203C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F194F10129ACD5400047203C /* Preview Assets.xcassets */; };
+		F194F10529ACD5700047203C /* Clocks in Frameworks */ = {isa = PBXBuildFile; productRef = F194F10429ACD5700047203C /* Clocks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F194F0D329ACC8F20047203C /* WorldMarketClocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldMarketClocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F194F0D629ACC8F20047203C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		F194F0D829ACC8F20047203C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F194F0D629ACC8F20047203C /* RootCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinatorView.swift; sourceTree = "<group>"; };
 		F194F0DA29ACC8F30047203C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F194F0E429ACC98E0047203C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F194F10129ACD5400047203C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F194F10529ACD5700047203C /* Clocks in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +39,7 @@
 			children = (
 				F194F0D529ACC8F20047203C /* WorldMarketClocks */,
 				F194F0D429ACC8F20047203C /* Products */,
+				F194F10329ACD5700047203C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,12 +54,27 @@
 		F194F0D529ACC8F20047203C /* WorldMarketClocks */ = {
 			isa = PBXGroup;
 			children = (
+				F194F10029ACD5400047203C /* Preview Content */,
 				F194F0E429ACC98E0047203C /* AppDelegate.swift */,
-				F194F0D629ACC8F20047203C /* RootView.swift */,
-				F194F0D829ACC8F20047203C /* ContentView.swift */,
+				F194F0D629ACC8F20047203C /* RootCoordinatorView.swift */,
 				F194F0DA29ACC8F30047203C /* Assets.xcassets */,
 			);
 			path = WorldMarketClocks;
+			sourceTree = "<group>";
+		};
+		F194F10029ACD5400047203C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F194F10129ACD5400047203C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F194F10329ACD5700047203C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -75,6 +93,9 @@
 			dependencies = (
 			);
 			name = WorldMarketClocks;
+			packageProductDependencies = (
+				F194F10429ACD5700047203C /* Clocks */,
+			);
 			productName = WorldMarketClocks;
 			productReference = F194F0D329ACC8F20047203C /* WorldMarketClocks.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F194F10229ACD5400047203C /* Preview Assets.xcassets in Resources */,
 				F194F0DB29ACC8F30047203C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,8 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F194F0E529ACC98E0047203C /* AppDelegate.swift in Sources */,
-				F194F0D929ACC8F20047203C /* ContentView.swift in Sources */,
-				F194F0D729ACC8F20047203C /* RootView.swift in Sources */,
+				F194F0D729ACC8F20047203C /* RootCoordinatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +352,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F194F10429ACD5700047203C /* Clocks */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Clocks;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F194F0CB29ACC8F20047203C /* Project object */;
 }

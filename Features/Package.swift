@@ -7,12 +7,12 @@ let package = Package(
     name: "Features",
     platforms: [.iOS(.v16)],
     products: [
-        
+        .library(name: "Clocks", targets: ["Clocks"])
     ],
     dependencies: [
         
     ],
     targets: [
-        
+        .target(name: "Clocks")
     ]
 )

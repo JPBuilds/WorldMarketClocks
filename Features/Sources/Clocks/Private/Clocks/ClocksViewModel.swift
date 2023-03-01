@@ -1,0 +1,3 @@
+struct ClocksViewModel: Equatable {
+    
+}
