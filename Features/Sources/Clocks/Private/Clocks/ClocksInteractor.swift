@@ -1,3 +1,4 @@
+import Foundation
 import SwiftUI
 
 protocol ClocksInteractorDelegate: AnyObject {
@@ -6,7 +7,15 @@ protocol ClocksInteractorDelegate: AnyObject {
 
 class ClocksInteractor: ObservableObject {
     struct State {
-        
+        var markets: [TimeZone] = [
+            TimeZone(identifier: "Europe/Paris")!,
+            TimeZone(identifier: "America/Argentina/Buenos_Aires")!,
+        ]
+        var timezones: [TimeZone] = [
+            TimeZone(identifier: "Indian/Chagos")!,
+            TimeZone(identifier: "Pacific/Bougainville")!,
+            TimeZone(identifier: "Australia/Brisbane")!
+        ]
     }
     
     // MARK: - Public Properties
