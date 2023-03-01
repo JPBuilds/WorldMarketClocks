@@ -4,17 +4,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "Features",
+    name: "DesignSystem",
     platforms: [.iOS(.v16)],
     products: [
-        .library(name: "Clocks", targets: ["Clocks"])
+        .library(name: "DesignSystem", targets: ["DesignSystem"])
     ],
     dependencies: [
-        .package(path: "../DesignSystem")
+        
     ],
     targets: [
-        .target(name: "Clocks", dependencies: [
-            .product(name: "DesignSystem", package: "DesignSystem")
-        ])
+        .target(name: "DesignSystem")
     ]
 )

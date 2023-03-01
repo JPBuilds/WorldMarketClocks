@@ -1,3 +1,4 @@
+import DesignSystem
 import SwiftUI
 
 struct ClocksView: View {
@@ -20,6 +21,7 @@ struct ClocksView: View {
                     VStack(alignment: .leading, spacing: 0) {
                         Text("World Clocks")
                             .font(.system(size: 36, weight: .semibold))
+                            .foregroundColor(.text_primary)
                             .padding([.leading, .trailing], 16)
                             .padding([.top], 8)
                             .padding([.bottom], 16)
@@ -41,6 +43,7 @@ extension ClocksView {
                 HStack() {
                     Text("Markets")
                         .font(.system(size: 20, weight: .medium))
+                        .foregroundColor(.text_primary)
                     
                     Spacer()
                 }
@@ -64,6 +67,7 @@ extension ClocksView {
                 HStack() {
                     Text("Timezones")
                         .font(.system(size: 20, weight: .medium))
+                        .foregroundColor(.text_primary)
                     
                     Spacer()
                 }
